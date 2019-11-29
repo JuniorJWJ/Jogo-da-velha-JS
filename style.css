@@ -26,3 +26,19 @@ img{
 	height: 200px;
 	width: 200px;
 }
+#msg{
+	/* padding: 10px 50px; */
+	background-color: rgba(45, 175, 99, 0.5);
+	border: solid 1px #460000;
+	border-radius: 5px;
+	width: 300px;
+	/* position: fixed; */
+	/* float:center;*/
+	top:42%; 
+	left: 37.5%; 
+
+	position: absolute; 
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}

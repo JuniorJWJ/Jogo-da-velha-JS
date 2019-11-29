@@ -5,25 +5,63 @@ var tabela = [
     "","","",
     "","",""];
 
-    function preenche(numero) { 
-        
-        if(tabela[numero]=="" && empate==0){
-            if(i%2==0){
-                document.getElementById(numero).src="x.png";
-                tabela[numero]="X";
-            }
-            if(i%2!=0){
-                document.getElementById(numero).style.background="green";
-                tabela[numero]="O";
-            }
-            console.log(i);
-            i=i+1;
+function preenche(numero) { 
+    
+    if(tabela[numero]=="" && empate==0){
+        if(i%2==0){
+            document.getElementById(numero).src="img/x.png";
+            tabela[numero]="X";
         }
-        console.log(tabela)
+        if(i%2!=0){
+            document.getElementById(numero).src="img/o.png";
+            tabela[numero]="O";
+        }
+        console.log(i);
+        i=i+1;
     }
+    console.log(tabela)
+}
+
+function pede_nome() {
+    var msg = document.getElementById("msg")
+    msg.style.display = "none"
+    var meuForm = document.forms['formNomes']
+    var nome1 = document.getElementById("nome1").value
+    var nome2 = document.getElementById("nome2").value
+    
+    return false;
+    
+
+    // if (erro) {
+    //     msg.innerHTML = textErro;
+    //     msg.style.display = "block"
+    //     return false;
+    // } else {
+    //     return true;
+    // }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function valida() { 
     if(tabela[0]=="X" && tabela[1]==tabela[0] && tabela[1]==tabela[02]){//linha1
+        document.getElementById(numero).style.backgroundColor="red";
         console.log("Jogador 1 venceu!!!")
         empate = 1
     }

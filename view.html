@@ -8,34 +8,51 @@
     <title> Jogo da velha </title>
     </head>
 <body>
-
+<div id="msg" >
+	<form  name="formNomes" action="" method="POST" onsubmit="return pede_nome()">
+		<label for="nome1">Jogador 1</label><br>
+		<input type="text" name="nome1" id="nome1"><br>
+		<label for="nome2">Jogador 2</label><br>
+		<input type="text" name="nome2" id="nome2"><br>
+		<input type="submit" value="Cadastrar" >
+	   
+	</form>
+</div>
 <section id='fundo'>
-	<div class='quadrado' onclick='preenche(0),valida()'>
+	<div class='quadrado' onclick='preenche(0),valida(),pedenome()'>
 		<img src="white.png" alt="imagem alterada por JS"  id='0'>
 	</div>
 
-	<div class='quadrado' id='1' onclick='preenche("1"),valida()'>
+	<div class='quadrado' onclick='preenche("1"),valida()'>
+		<img src="white.png" alt="imagem alterada por JS"  id='1'>
 	</div>
 
-	<div class='quadrado' id='2' onclick='preenche("2"),valida()'>
+	<div class='quadrado'  onclick='preenche("2"),valida()'>
+		<img src="white.png" alt="imagem alterada por JS"  id='2'>
 	</div>
 
-	<div class='quadrado' id='3' onclick='preenche("3"),valida()'>
+	<div class='quadrado' onclick='preenche("3"),valida()'>
+		<img src="white.png" alt="imagem alterada por JS"  id='3'>
 	</div>
 
-	<div class='quadrado' id='4' onclick='preenche("4"),valida()'>
+	<div class='quadrado'  onclick='preenche("4"),valida()'>
+		<img src="white.png" alt="imagem alterada por JS"  id='4'>
 	</div>
 
-	<div class='quadrado' id='5' onclick='preenche("5"),valida()'>
+	<div class='quadrado' onclick='preenche("5"),valida()'>
+		<img src="white.png" alt="imagem alterada por JS"  id='5'>
 	</div>
 
-	<div class='quadrado' id='6' onclick='preenche("6"),valida()'>
+	<div class='quadrado' onclick='preenche("6"),valida()'>
+		<img src="white.png" alt="imagem alterada por JS"  id='6'>
 	</div>
 
-	<div class='quadrado' id='7' onclick='preenche("7"),valida()'>
+	<div class='quadrado' onclick='preenche("7"),valida()'>
+		<img src="white.png" alt="imagem alterada por JS"  id='7'>
 	</div>
 
-	<div class='quadrado' id='8' onclick='preenche("8"),valida()' >
+	<div class='quadrado' onclick='preenche("8"),valida()' >
+		<img src="white.png" alt="imagem alterada por JS"  id='8'>
 	</div>
 </section>
 <script type="text/javascript" src="js.js"></script>
