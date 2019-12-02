@@ -1,4 +1,5 @@
 body{
+	text-align:center;
 	background-color: gray;
 	height: 100%;
 	width: 100%;
@@ -31,7 +32,12 @@ img{
 	width: 200px;
 }
 #msg{
-	padding-top: 50px;
+	 /* position: absolute;
+  top: 50%;  
+  margin-top: -25px;   
+  left: 50%; 
+  margin-left: -100px;  
+	padding-top: 50px; */
 	/* padding: 10px 50px; */
 	background-color: rgba(45, 175, 99);
 	border: solid 1px #460000;
@@ -43,9 +49,29 @@ img{
 	position: absolute; 
 	margin: 0 auto;
 	text-align: center;
-	display: block;
+	display: none;
 }
-#nome1,#nome2{
+#menu1{
+	/* position: absolute;
+ top: 50%;  
+ margin-top: -25px;   
+ left: 50%; 
+ margin-left: -100px;  
+   padding-top: 50px; */
+   /* padding: 10px 50px; */
+   background-color: rgba(45, 175, 99);
+   border: solid 1px #460000;
+   border-radius: 5px;
+   width: 300px;
+   height: 200px;
+   /* top:42%; 
+   left: 37.5%;  */
+   position: absolute; 
+   margin: 0 auto;
+   text-align: center;
+   display: block;
+}
+#nome1,#nome2,#botao{
 	border-radius: 10px;
 	border-style: none;
 	width: 250px;

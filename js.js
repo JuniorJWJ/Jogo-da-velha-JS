@@ -4,7 +4,7 @@ var tabela = [
     "","","",
     "","","",
     "","",""];
-
+var jogadores = ["",""]
 function preenche(numero) { 
     
     if(tabela[numero]=="" && empate==0){
@@ -23,6 +23,8 @@ function preenche(numero) {
 }
 
 function pede_nome() {
+     jogadores[0]= (document.getElementById("nome1").value) ;
+     jogadores[1]= (document.getElementById("nome1").value);
     var msg = document.getElementById("msg")
     msg.style.display = "none"
     var meuForm = document.forms['formNomes']
@@ -32,7 +34,7 @@ function pede_nome() {
     // document.querySelector('#fundo').style.os-filter= "blur(0px)"
     // document.querySelector('#fundo').style.ms-filter = "blur(0px)"
     // document.querySelector('#fundo').style.webkit-filter= "blur(0px)"
-    ("#fundo").css("filter", "0px");
+    document.querySelector('#fundo').style.filter= "blur(0px)";
     // document.querySelector('#fundo').css("-ms-filter","blur(0px)");
     // document.querySelector('#fundo').css("os-filter","blur(0px)");
     // document.querySelector('#fundo').css("-webkit-filter","blur(0px)");
@@ -47,6 +49,34 @@ function pede_nome() {
     // } else {
     //     return true;
     // }
+}
+function botao_menu1() {
+   var msg = document.getElementById("msg")
+   msg.style.display = "block"
+   var menu = document.getElementById("menu1")
+   menu.style.display = "none"
+   var meuForm = document.forms['formNomes']
+   var nome1 = document.getElementById("nome1").value
+   var nome2 = document.getElementById("nome2").value
+   // document.querySelector('#fundo').style.moz-filter= "blur(0px)"
+   // document.querySelector('#fundo').style.os-filter= "blur(0px)"
+   // document.querySelector('#fundo').style.ms-filter = "blur(0px)"
+   // document.querySelector('#fundo').style.webkit-filter= "blur(0px)"
+   document.querySelector('#fundo').style.filter= "blur(0px)";
+   // document.querySelector('#fundo').css("-ms-filter","blur(0px)");
+   // document.querySelector('#fundo').css("os-filter","blur(0px)");
+   // document.querySelector('#fundo').css("-webkit-filter","blur(0px)");
+   // document.querySelector('#fundo').css("-moz-filter","blur(0px)");
+   return false;
+   
+
+   // if (erro) {
+   //     msg.innerHTML = textErro;
+   //     msg.style.display = "block"
+   //     return false;
+   // } else {
+   //     return true;
+   // }
 }
 
 
@@ -69,8 +99,7 @@ function pede_nome() {
 
 function valida() { 
     if(tabela[0]=="X" && tabela[1]==tabela[0] && tabela[1]==tabela[02]){//linha1
-        document.getElementById(numero).style.backgroundColor="red";
-        console.log("Jogador 1 venceu!!!")
+        console.log(jogadores[1]+" venceu!!!")
         empate = 1
     }
     if(tabela[0]=="X" && tabela[0]==tabela[4]  && tabela[4]==tabela[8]){//diagonal1
