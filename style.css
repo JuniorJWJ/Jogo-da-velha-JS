@@ -4,11 +4,15 @@ body{
 	width: 100%;
 }
 #fundo{
+	/* -webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px); */
+	filter: blur(5px);
 	background-color: gray;
 	height: 660px;
 	width: 660px;
-	margin: 0 auto ;
-	
+	margin: 0 auto ;	
 
 }
 .quadrado{
@@ -27,18 +31,24 @@ img{
 	width: 200px;
 }
 #msg{
+	padding-top: 50px;
 	/* padding: 10px 50px; */
-	background-color: rgba(45, 175, 99, 0.5);
+	background-color: rgba(45, 175, 99);
 	border: solid 1px #460000;
 	border-radius: 5px;
 	width: 300px;
-	/* position: fixed; */
-	/* float:center;*/
-	top:42%; 
-	left: 37.5%; 
-
+	height: 200px;
+	/* top:42%; 
+	left: 37.5%;  */
 	position: absolute; 
 	margin: 0 auto;
 	text-align: center;
 	display: block;
+}
+#nome1,#nome2{
+	border-radius: 10px;
+	border-style: none;
+	width: 250px;
+	height: 30px;
+	margin: 5px 0px;
 }

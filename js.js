@@ -28,7 +28,15 @@ function pede_nome() {
     var meuForm = document.forms['formNomes']
     var nome1 = document.getElementById("nome1").value
     var nome2 = document.getElementById("nome2").value
-    
+    // document.querySelector('#fundo').style.moz-filter= "blur(0px)"
+    // document.querySelector('#fundo').style.os-filter= "blur(0px)"
+    // document.querySelector('#fundo').style.ms-filter = "blur(0px)"
+    // document.querySelector('#fundo').style.webkit-filter= "blur(0px)"
+    ("#fundo").css("filter", "0px");
+    // document.querySelector('#fundo').css("-ms-filter","blur(0px)");
+    // document.querySelector('#fundo').css("os-filter","blur(0px)");
+    // document.querySelector('#fundo').css("-webkit-filter","blur(0px)");
+    // document.querySelector('#fundo').css("-moz-filter","blur(0px)");
     return false;
     
 
@@ -128,8 +136,8 @@ function valida() {
     }
     if(empate==0 && i==11 ){
         console.log("Deu Empate")
-	}
-	if(empate==1){
+    }
+    if(empate==1){
         console.log("Fim de jogo")
     }
 }
