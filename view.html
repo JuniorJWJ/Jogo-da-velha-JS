@@ -10,22 +10,22 @@
 <body>
 	<div id="menu1" >
 			<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return botao_menu1()">
-				
 				<input type="submit" value="1 Jogador" id="botao" >
-				<input type="submit" value="2 Jogadores " id="botao" >
-				<input type="submit" value="Jogar" id="botao" >
-				
 			</form>
-		</div>
-		<div id="msgx1" >
-				<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return pede_nome()">
-					<label for="nome1">Jogador 1</label>
-					<input type="text" name="nome1" id="nome1">
-					<input type="submit" value="Jogar" id="botao" >
-				
-				</form>
-			</div>
-	<div id="msg" >
+	
+			<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return botao_menu2()">
+				<input type="submit" value="2 Jogadores " id="botao" >
+			</form>
+	</div>
+
+		<div id="inserenome1" >
+			<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return pede_nome()">
+				<label for="nome1">Jogador 1</label>
+				<input type="text" name="nome1" id="nome">
+				<input type="submit" value="Jogar" id="botao" >
+			</form>
+	</div>
+	<div id="inserenome2" >
 		<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return pede_nome()">
 			<label for="nome1">Jogador 1</label>
 			<input type="text" name="nome1" id="nome1">
@@ -34,6 +34,11 @@
 			<input type="submit" value="Jogar" id="botao" >
 		
 		</form>
+	</div>
+	<div id="reset" >	
+			<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return resetar()">
+				<input type="submit" value="Jogar novamente " id="botaoreset" >
+			</form>
 	</div>
 	<section id='fundo'>
 		<div id='fundo1'>

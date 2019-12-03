@@ -3,12 +3,13 @@ body{
 	background-color: gray;
 	height: 100%;
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #fundo{
-	/* -webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px); */
+	z-index:200;
+	position: relative;
 	filter: blur(5px);
 	background-color: gray;
 	height: 660px;
@@ -31,41 +32,37 @@ img{
 	height: 200px;
 	width: 200px;
 }
-#msg{
-	 /* position: absolute;
-  top: 50%;  
-  margin-top: -25px;   
-  left: 50%; 
-  margin-left: -100px;  
-	padding-top: 50px; */
-	/* padding: 10px 50px; */
+#inserenome1{
+	z-index:1000;
 	background-color: rgba(45, 175, 99);
 	border: solid 1px #460000;
 	border-radius: 5px;
 	width: 300px;
-	height: 200px;
-	/* top:42%; 
-	left: 37.5%;  */
+	height: 100px;
 	position: absolute; 
 	margin: 0 auto;
 	text-align: center;
 	display: none;
 }
-#menu1{
-	/* position: absolute;
- top: 50%;  
- margin-top: -25px;   
- left: 50%; 
- margin-left: -100px;  
-   padding-top: 50px; */
-   /* padding: 10px 50px; */
+#inserenome2{
+	z-index:1000;
+	background-color: rgba(45, 175, 99);
+	border: solid 1px #460000;
+	border-radius: 5px;
+	width: 300px;
+	height: 200px;
+	position: absolute; 
+	margin: 0 auto;
+	text-align: center;
+	display: none;
+}
+#menu1,#menu2{
+   z-index:1000;
    background-color: rgba(45, 175, 99);
    border: solid 1px #460000;
    border-radius: 5px;
    width: 300px;
-   height: 200px;
-   /* top:42%; 
-   left: 37.5%;  */
+   height: 100px;
    position: absolute; 
    margin: 0 auto;
    text-align: center;
@@ -77,4 +74,16 @@ img{
 	width: 250px;
 	height: 30px;
 	margin: 5px 0px;
+}
+#reset{
+   z-index:1000;
+   background-color: rgba(45, 175, 99);
+   border: solid 1px #460000;
+   border-radius: 5px;
+   width: 100px;
+   height: 100px;
+   position: absolute; 
+   margin: 0 auto;
+   text-align: center;
+   display: none;
 }
