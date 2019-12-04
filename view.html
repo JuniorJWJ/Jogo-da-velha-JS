@@ -10,39 +10,39 @@
 <body>
 	<div id="menu1" >
 			<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return botao_menu1()">
-				<input type="submit" value="1 Jogador" id="botao" >
+				<input type="submit" value="1 Jogador"  class="botao" >
 			</form>
 	
 			<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return botao_menu2()">
-				<input type="submit" value="2 Jogadores " id="botao" >
+				<input type="submit" value="2 Jogadores " class="botao" >
 			</form>
 	</div>
 
 		<div id="inserenome1" >
 			<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return pede_nome()">
 				<label for="nome1">Jogador 1</label>
-				<input type="text" name="nome1" id="nome">
-				<input type="submit" value="Jogar" id="botao" >
+				<input type="text" name="nome1" required="required" id="nome">
+				<input type="submit" value="Jogar" class="botao" >
 			</form>
 	</div>
 	<div id="inserenome2" >
 		<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return pede_nome()">
 			<label for="nome1">Jogador 1</label>
-			<input type="text" name="nome1" id="nome1">
+			<input type="text" name="nome1" required="required" id="nome1">
 			<label for="nome2">Jogador 2</label>
-			<input type="text" name="nome2" id="nome2">
-			<input type="submit" value="Jogar" id="botao" >
+			<input type="text" name="nome2" required="required" id="nome2">
+			<input type="submit" value="Jogar" class="botao" >
 		
 		</form>
 	</div>
 	<div id="reset" >	
 			<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return resetar()">
-				<input type="submit" value="Jogar novamente " id="botaoreset" >
+				<input type="submit" value="Jogar novamente " class="botao"id="botaoreset" >
 			</form>
 	</div>
 	<section id='fundo'>
 		<div id='fundo1'>
-			<div class='quadrado' onclick='preenche(0),valida(),pedenome()'>
+			<div class='quadrado' onclick='preenche("0"),valida()'>
 				<img src="img/white.png" alt="imagem alterada por JS"  id='0'>
 			</div>
 
