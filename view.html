@@ -19,16 +19,16 @@
 	</div>
 
 		<div id="inserenome1" >
-			<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return pede_nome()">
+			<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return pede_nome1()">
 				<label for="nome1">Jogador 1</label>
-				<input type="text" name="nome1" required="required" id="nome">
+				<input type="text" name="nome1" required="required" id="nome" autofocus>
 				<input type="submit" value="Jogar" class="botao" >
 			</form>
 	</div>
 	<div id="inserenome2" >
 		<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return pede_nome()">
 			<label for="nome1">Jogador 1</label>
-			<input type="text" name="nome1" required="required" id="nome1">
+			<input type="text" name="nome1" required="required" id="nome1" autofocus>
 			<label for="nome2">Jogador 2</label>
 			<input type="text" name="nome2" required="required" id="nome2">
 			<input type="submit" value="Jogar" class="botao" >
@@ -37,7 +37,8 @@
 	</div>
 	<div id="reset" >	
 			<form  id="formulario" name="formNomes" action="" method="POST" onsubmit="return resetar()">
-				<input type="submit" value="Jogar novamente " class="botao"id="botaoreset" >
+				<label id="printarvencedor">oi</label>
+				<input type="submit" value="Jogar novamente " id="botaoreset" >
 			</form>
 	</div>
 	<section id='fundo'>
